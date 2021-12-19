@@ -10,8 +10,6 @@
 		if (error) alert(error.message); // alert if error
 	}
 
-	import supabase from '$lib/db';
-
 	// Select entries
 	async function getEntries() {
 		const { data, error } = await supabase.from('moodEntries').select();
